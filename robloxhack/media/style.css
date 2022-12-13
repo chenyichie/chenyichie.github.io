@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.main {
+    width: 750px;
+    height: 200px;
+    margin: auto auto;
+    margin-top: 250px;
+    background-color: #ffffff;
+}
+
+.title {
+    font-family: Microsoft JhengHei;
+    text-align: center;
+    margin: auto;
+    width: 350px;
+}
+
+.download {
+    text-align: center;
+    margin: auto;
+}
+
+.rick {
+    text-align: center;
+    font-size: large;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    float: left;
+}
+
+a {
+    text-decoration:none;
+}
