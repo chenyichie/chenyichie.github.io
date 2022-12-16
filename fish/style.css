@@ -4,15 +4,7 @@ div {
     width: 336px;
 }
 
-@-webkit-keyframes rotating {
-    0%{
-        -webkit-transform: rotateY(0deg);
-    }
-    100%{
-        -webkit-transform: rotateY(360deg);
-    }
-}
-
-.rotating {
-    -webkit-animation: rotating 0.5s linear infinite;
+img{
+    width: 336px;
+    height: 188px;
 }

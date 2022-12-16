@@ -16,14 +16,24 @@
 	Your browser does not support the audio element.
 	</audio>
     <div>
-        <img src="image.jpg" id="main" class="rotating">
+        <img src="./frames/frames38.jpg" id="main" class="rotating">
     </div>
 	<script>
 		let audio = document.querySelector("audio")
+		console.log(document.querySelector("button"))
 		document.querySelector("button").addEventListener("click", function() {
 			audio.play()
 			document.querySelector("button").remove()
 		})
+		let img = document.querySelector("img")
+		let imgname = 38
+		setInterval(function() {
+			if (imgname === 69){
+				imgname = 38
+			}
+			img.src = `./frames/frames${imgname}.jpg`
+			imgname++
+		}, 1000/30)
 	</script>
 </body>
 </html>
