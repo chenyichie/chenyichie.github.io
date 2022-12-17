@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.ico" type="image/x-icon">
     <title>旋轉魚</title>
 </head>
@@ -16,7 +15,7 @@
 	Your browser does not support the audio element.
 	</audio>
     <div>
-        <img src="./frames/frames38.jpg" id="main" class="rotating">
+        <img src="css_sprites.png" id="main" class="rotating">
     </div>
 	<script>
 		let audio = document.querySelector("audio")
@@ -24,26 +23,23 @@
 			audio.play()
 			document.querySelector("button").remove()
 		})
-		let img = document.querySelector("img")
-		let imgname = 38
-		setInterval(function() {
-			if (imgname === 69){
-				imgname = 38
-			}
-			img.src = `./frames/frames${imgname}.jpg`
-			imgname++
-		}, 1000/30)
 	</script>
 	<style>
 		div {
-			margin: auto;
-			margin-top: 250px;
-			width: 336px;
+			margin: 10% auto;
+			width: 640px;
+			overflow: hidden;
 		}
-
 		img{
-			width: 336px;
-			height: 188px;
+			animation: run 1s infinite steps(31);
+		}
+		@keyframes run {
+			0% {
+				transform: translateX(0px);
+			}
+			100% {
+				transform: translateX(-19840px);
+			}
 		}
 	</style>
 </body>
