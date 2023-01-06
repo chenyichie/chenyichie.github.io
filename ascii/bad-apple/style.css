@@ -1,0 +1,8 @@
+pre {
+    font-size: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
